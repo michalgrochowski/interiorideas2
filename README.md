@@ -8,6 +8,6 @@ Made with:
 - jQuery
 - Slick carousel/slider
 
-Live - https://michalgrochowski.github.io/interiorideas1/
+Live - https://michalgrochowski.github.io/interiorideas2/
 
 Production - http://interiorideas.pl
