@@ -1,7 +1,9 @@
 @import '_mixins.scss';
 
 // Main Styles
-
+* {
+    box-sizing: border-box;
+}
 html {
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.6;
@@ -21,7 +23,7 @@ body {
     color: #333;
     min-height: 200vh;
     position: relative;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.2rem;
 }
 
 // Header and nav
@@ -43,7 +45,7 @@ body {
     background-color: rgba(255, 255, 255, 1);
     z-index: 2;
     transition: height 0.5s, background-color 0.5s;
-    box-shadow: 0px 5px 15px 0px rgba(51,51,51,0.5);
+    box-shadow: 0px 2px 15px 0px rgba(51,51,51,0.5);
     @include mq-max(900px) {
         height: 7rem;
     }
@@ -51,13 +53,13 @@ body {
 .nav--small {
     height: 4rem;
     padding: 0.2rem 2rem 0.2rem 0;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 1);
     transition: height 0.5s, background-color 0.5s;
-    box-shadow: 0px 5px 15px 0px rgba(51,51,51,0.5);
+    box-shadow: 0px 2px 15px 0px rgba(51,51,51,0.5);
 }
 .nav__logo {
     margin: 1rem 0 0 3rem;
-    height: 11.5rem;
+    height: 10rem;
     width: auto;
     transition: height 0.5s, background-color 0.5s, margin 0.5s;
     @include mq-max(900px) {
@@ -70,13 +72,13 @@ body {
     }
 }
 .nav__logo--small {
-    margin: 1rem 0 0 1rem;
-    height: 4rem;
+    margin: 1rem 0 0 2rem;
+    height: 3rem;
     width: auto;
     transition: height 0.5s, background-color 0.5s, margin 0.5s;
 }
 .nav__list {
-    @include mq-min(801px) {
+    @include mq-min(851px) {
         @include flex-center-row;
         justify-content: flex-end;
         width: 100%;
@@ -87,17 +89,17 @@ body {
 }
 .nav__list--mobile {
     background-color: rgba(255, 255, 255, 1);
-    position: fixed;
-    top: 7.4rem;
+    position: absolute;
+    left: 0;
+    top: 5.4rem;
     width: 100%;
-    transition: top 0.5s;
     display: none;
     box-shadow: 0px 5px 15px 0px rgba(51,51,51,0.5);
 }
-.nav__list--mobile-scrolled {
+.nav__list--mobile--scrolled {
     @extend .nav__list--mobile;
-    top: 2.8rem;
-    box-shadow: 0px 10px 15px 0px rgba(51,51,51,0.5);
+    top: 2.4rem;
+    box-shadow: 0px 5px 15px 0px rgba(51,51,51,0.5);
 }
 .nav__item {
     font-size: 1.8rem;
@@ -109,7 +111,7 @@ body {
     }
 }
 .nav__item--mobile {
-    margin-left: -5rem;
+    margin-left: -2rem;
 }
 .nav__item:last-of-type {
     @include mq-min(851px) {
@@ -125,7 +127,6 @@ body {
     text-decoration: underline;
 }
 .nav__hamburger {
-    margin: 0 2rem 0 0;
     color: #333333;
     font-size: 3rem;
     border: none;
@@ -243,6 +244,9 @@ body {
 }
 .projects__description {
     @include pseudo;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
 }
 .projects__description {
     color: rgba(255,255,255,0.7);
@@ -270,27 +274,27 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("../img/1.jpg");
+    background-image: url("../img/salon/1.jpg");
 }
 .projects__lightbox--kitchen {
     @extend .projects__lightbox--livingroom;
-    background-image: url("../img/1.jpg");
+    background-image: url("../img/kuchnia/1.jpg");
 }
 .projects__lightbox--bathroom {
    @extend .projects__lightbox--livingroom;
-    background-image: url("../img/1.jpg");
+    background-image: url("../img/lazienka/1.jpg");
 }
 .projects__lightbox--bedroom {
     @extend .projects__lightbox--livingroom;
-    background-image: url("../img/1.jpg");
+    background-image: url("../img/sypialnia/1.jpg");
 }
 .projects__lightbox--furniture {
     @extend .projects__lightbox--livingroom;
-    background-image: url("../img/1.jpg");
+    background-image: url("../img/meble/1.jpg");
 }
 .projects__lightbox--inspirations {
     @extend .projects__lightbox--livingroom;
-    background-image: url("../img/1.jpg");
+    background-image: url("../img/inspiracje/1.jpg");
 }
 .projects__lightbox--hidden {
     display: none;
@@ -341,33 +345,33 @@ body {
 .contact {
     @include flex-column;
     flex-wrap: wrap;
+    margin-bottom: 5rem;
 }
 .contact__wrapper {
-    @include flex-center-row;
     width: 100%;
-    @include mq-max(600px) {
+    @include mq-max(700px) {
         @include flex-center-column;
+    }
+    @include mq-min(701px) {
+        @include flex-center-row;
     }
 }
 .form {
     @include flex-column;
     margin-top: 1rem;
-    @include mq-max(700px) {
-        flex-basis: 90%;
+    @include mq-max(900px) {
         padding: 1rem;
     }
-    @include mq-min(701px) {
-        flex-basis: 45%;
+    @include mq-min(901px) {
         padding: 2.5rem;
+        width: 50%;
     }
-    @include mq-min(968px) {
-        padding: 2.5rem;
-    }
+    position: relative;
 }
 .form__input {
     font-family: 'Source Sans Pro', sans-serif;
-    background-color: rgba(122, 122, 122, 0.5);
-    color: #ffffff;
+    background-color: rgba(200, 200, 200, 0.5);
+    color: #333333;
     width: 100%;
     border: none;
     height: 3rem;
@@ -375,14 +379,17 @@ body {
     transition: all 0.5s;
 }
 .form__input:focus {
-    background-color: rgba(122, 122, 122, 1);
-    box-shadow: 0px 0px 15px 5px rgba(51,51,51,0.3);
+    background-color: rgba(180, 180, 180, 0.8);
     transition: all 0.5s;
+}
+.input__fail {
+    font-size:1.4rem;
+    color: #c71610;
 }
 .form__textarea {
     font-family: 'Source Sans Pro', sans-serif;
-    background-color: rgba(122, 122, 122, 0.5);
-    color: #ffffff;
+    background-color: rgba(200, 200, 200, 0.5);
+    color: #333333;
     width: 100%;
     height: 13rem;
     border: none;
@@ -392,8 +399,7 @@ body {
     transition: all 0.5s;
 }
 .form__textarea:focus {
-    background-color: rgba(122, 122, 122, 1);
-    box-shadow: 0px 0px 15px 5px rgba(51,51,51,0.3);
+    background-color: rgba(180, 180, 180, 0.8);
     transition: all 0.5s;
 }
 .form__button {
@@ -429,18 +435,39 @@ body {
     box-shadow: 0px 0px 15px 5px rgba(51,51,51,0.3);
     transition: all 0.5s;
 }
+.form__success {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 70%;
+    height: 20%;
+    background-color: #4CD964;
+    box-shadow: 0px 0px 15px 5px rgba(51,51,51,0.3);
+    @include flex-center-column;
+    p {
+        font-size: 2.4rem;
+        color: #ffffff;
+    }
+    @include mq-max(600px) {
+        width: 90%;
+        text-align: center;
+    }
+}
+.form__fail {
+    @extend .form__success;
+    background-color: #c71610;
+}
 .socials {
     @include flex-column;
-    flex-basis: 50%;
     padding: 2rem;
     text-align: center;
-    @include mq-max(700px) {
-        flex-basis: 90%;
+    @include mq-max(900px) {
         padding: 1rem;
     }
-    @include mq-min(701px) {
-        flex-basis: 30%;
-        padding: 2rem 2rem 2rem 10rem;
+    @include mq-min(901px) {
+        width: 50%;
+        padding: 2rem 2rem 2rem 7rem;
     }
 }
 .socials__link {
@@ -471,6 +498,9 @@ body {
     padding-top: 0.5rem;
     font-size: 4rem;
 }
+.socials__icon--mail {
+    padding-top: 0.3rem;
+}
 .socials__text {
     text-align: left;
     font-size: 2rem;
@@ -495,6 +525,11 @@ body {
     color: #eaeaea;
     height: 3rem;
     background-color: rgba(51, 51, 51, 0.8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 0px 15px 5px rgba(51,51,51,0.3);
 }
 .footer__copyright {
     font-size: 1.2rem;
@@ -539,24 +574,16 @@ body {
     transition: box-shadow 0.5s, color 0.5s;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: #ffffff;
-    text-indent: 1rem;
-    padding: 1rem;
+    color: #333333;
 }
 ::-moz-placeholder { /* Firefox 19+ */
-    color: #ffffff;
-    text-indent: 1rem;
-    padding: 1rem;
+    color: #333333;
 }
 :-ms-input-placeholder { /* IE 10+ */
-    color: #ffffff;
-    text-indent: 1rem;
-    padding: 1rem;
+    color: #333333;
 }
 :-moz-placeholder { /* Firefox 18- */
-    color: #ffffff;
-    text-indent: 1rem;
-    padding: 1rem;
+    color: #333333;
 }
 
 // Helper classes
