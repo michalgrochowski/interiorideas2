@@ -7,6 +7,7 @@
 html {
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.6;
+    font-weight: 400;
     @include mq-max(600px) {
         font-size: 9px;
     }
@@ -206,6 +207,7 @@ body {
     @include mq-min(968px) {
         padding: 0 7rem 0 1rem;
     }
+    font-weight: 400;
 }
 
 // Projects section
