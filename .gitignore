@@ -50,4 +50,5 @@ Temporary Items
 node_modules/
 
 # Form files
+phpmailer/
 formularz.php
