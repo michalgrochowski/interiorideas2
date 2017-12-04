@@ -1,0 +1,41 @@
+.projects {
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+.projects__title {
+    font-size: 2rem;
+}
+
+.projects__thumbnails {
+    height: 500px;
+    margin: 2rem 0;
+    width: 100%;
+    @include flex-center-row;
+}
+
+.projects__photo {
+    overflow: hidden;
+    display: block;
+    margin: 0.5rem 1rem;
+    background-color: #777777;
+    height: 90%;
+    width: 15%;
+    transition: 0.3s all;
+    position: relative;
+    &:hover {
+        width: 30%;
+        transition: 0.3s all;
+    }
+}
+
+.projects__background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    transition: 0.3s all;
+    &:hover {
+        transition: 0.3s all;
+    }
+}
