@@ -10,6 +10,6 @@ Made with:
 - jQuery
 - Lightbox 2
 
-Live - https://michalgrochowski.github.io/interiorideas2/
+Live - https://michalgrochowski.github.io/interiorideas2/app
 
 Production - http://interiorideas.pl

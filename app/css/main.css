@@ -835,7 +835,8 @@ body {
   margin-bottom: 5rem; }
 
 .projects__title {
-  font-size: 2rem; }
+  font-size: 2rem;
+  font-weight: normal; }
 
 .projects__thumbnails {
   height: 500px;
