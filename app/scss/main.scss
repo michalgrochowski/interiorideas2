@@ -1,0 +1,37 @@
+@import '_mixins.scss';
+
+// Main Styles
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6;
+    font-weight: 400;
+    @include mq-max(600px) {
+        font-size: 9px;
+    }
+    @include mq-minmax(601px, 968px) {
+        font-size: 10px;
+    }
+    @include mq-min(969px) {
+        font-size: 10px;
+    }
+}
+body {
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    color: #333;
+    min-height: 100vh;
+    position: relative;
+    letter-spacing: 0.2rem;
+}
+
+@import '_nav.scss';
+@import '_layout.scss';
+@import '_bottom-nav.scss';
+@import '_about.scss';
+@import '_contact.scss';
+@import '_socials.scss';
+@import '_footer.scss';
+@import '_misc.scss';

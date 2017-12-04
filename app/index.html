@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&amp;subset=latin-ext"> 
+	<!--build:css css/main.min.css -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/lightbox.css"/>
+    <link rel="stylesheet" href="css/fontello.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!-- endbuild -->
+	<title>Interior Ideas - Urszula Wajner</title>
+	<meta name="description" content="Interior Ideas">
+	<meta name="keywords" content="interior, ideas, interiorideas">
+	<meta name="author" content="Michał Grochowski">
+	<link rel="icon" href="img/favicon32.jpg" sizes="32x32">
+    <link rel="icon" href="img/favicon64.jpg" sizes="64x64">
+	<meta property="og:title" content="Interior Ideas">
+	<meta property="og:url" content="...">
+	<meta property="og:image" content="img/facebook.jpg">
+	<meta property="og:description" content="Interior Ideas">
+</head>
+<body id="body" class=""> 
+	<a href="#body" title="Do góry" class="scroll-top"><span class="icon-angle-circled-up"></span></a>
+	<header class="header">
+		<nav class="nav">
+			<a href="index.html" title="Interior Ideas - Urszula Wajner"><img class="nav__logo" src="img/logo.png" alt="Interior Ideas - Urszula Wajner"></a>
+			<ul class="nav__list">
+				<li class="nav__item"><a class="nav__link" href="#about" title="O mnie">O mnie</a></li>
+				<li class="nav__item"><a class="nav__link" href="/realizacje.html" title="Realizacje">Realizacje</a></li>
+				<li class="nav__item"><a class="nav__link" href="/inspiracje.html" title="Realizacje">Inspiracje</a></li>
+				<li class="nav__item"><a class="nav__link" href="/detale.html" title="Realizacje">Detale</a></li>
+				<li class="nav__item"><a class="nav__link" href="#contact" title="Kontakt">Kontakt</a></li>
+			</ul>
+			<ul class="nav__list--mobile">
+				<li class="nav__item nav__item--mobile"><a class="nav__link nav__link--mobile" href="#about" title="O mnie">O mnie</a></li>
+				<li class="nav__item nav__item--mobile"><a class="nav__link nav__link--mobile" href="/realizacje.html" title="Realizacje">Realizacje</a></li>
+				<li class="nav__item nav__item--mobile"><a class="nav__link nav__link--mobile" href="/inspiracje.html" title="Inspiracje">Inspiracje</a></li>
+				<li class="nav__item nav__item--mobile"><a class="nav__link nav__link--mobile" href="/detale.html" title="Detale">Detale</a></li>
+				<li class="nav__item nav__item--mobile"><a class="nav__link nav__link--mobile" href="#contact" title="Kontakt">Kontakt</a></li>
+			</ul>
+			<button class="nav__hamburger icon-menu"></button>
+			<button class="nav__close-menu icon-cancel"></button>
+		</nav> 
+	</header>
+	<main class="container">
+		<h1 class="container__title">Projektowanie wnętrz</h1>   
+		<section id="bottom-nav" class="section bottom-nav">  
+			<nav class="bottom-nav__wrapper">
+				<ul class="bottom-nav__list">
+					<li class="bottom-nav__item">
+						<a href="#about" class="bottom-nav__link">O mnie</a>
+					</li>
+					<li class="bottom-nav__item bottom-nav__item--big">
+						<a href="/realizacje.html" class="bottom-nav__link">Realizacje</a>
+					</li>
+					<li class="bottom-nav__item">
+						<a href="/inspiracje.html" class="bottom-nav__link">Inspiracje</a>
+					</li>
+					<li class="bottom-nav__item">
+						<a href="/detale.html" class="bottom-nav__link">Detale</a>
+					</li>
+					<li class="bottom-nav__item">
+						<a href="#contact" class="bottom-nav__link">Kontakt</a>
+					</li>
+				</ul>
+			</nav>
+		</section> 
+		<section id="about" class="section about">  
+			<h2 class="section__title">O mnie</h2>
+			<article class="about__wrapper">
+				<h3 class="section__text">Projektowanie to dla mnie najciekawszy sposób na życie.</h3>
+				<p class="section__text">Wszystko wokół nas ewoluuje w niesamowitym tempie, więc w tym zawodzie wciąż odnajduję nowe możliwości i ciekawe rozwiązania. Nic nie musi być standardem i powtarzalnym elementem, jednak trzeba pamiętać, kiedy powinno.</p>
+				<p class="section__text">Nauczyłam się słuchać, obserwować i czerpać inspirację do stworzenia pięknej formy. W ten sposób powstają nie tylko całe przestrzenie, ale też mniejsze elementy architektury wnętrz.</p>
+			</article>
+			<img class="about__portrait" src="img/omnie.jpg" alt="Urszula Wajner">
+		</section>
+		<section id="contact" class="section contact">  
+			<article class="section__description">
+				<h2 class="section__title">Kontakt</h2>
+				<p class="section__paragraph">Wybierz jedną z opcji kontaktu poniżej:</p>
+			</article>
+			<div class="contact__wrapper">
+				<form class="form" action="formularz.php" method="POST">
+					<div class="form__group form__group--mail">
+						<label for="inputMail">Adres e-mail</label>
+						<input type="email" class="form__input form__input--mail" id="inputMail" placeholder="adres@email.pl" name="email">
+					</div>
+					<div class="form__group form__group--phone">
+						<label for="inputPhone">Numer telefonu</label>
+						<input type="tel" maxlength="9" class="form__input form__input--phone" id="inputPhone" placeholder="555555555" name="phone" title="9 cyfrowy numer telefonu">
+					</div>
+					<div class="form__group form__group--name">
+						<label for="inputName">Imię i nazwisko</label>
+						<input type="text" class="form__input form__input--name" id="inputName" placeholder="Imię i nazwisko" name="name">
+					</div>
+					<div class="form__group form__group--msg">
+						<label for="inputText">Treść wiadomości</label>
+						<textarea id="inputText" class="form__textarea" placeholder="Wiadomość" name="message"></textarea>
+					</div>
+					<input type="submit" class="form__button" value="Wyślij" name="submit" id="buttonSubmit">
+				</form>
+				<div class="socials">
+					<a class="socials__link" href="https://www.facebook.com" target="_blank" title="Facebook">
+					<span class="socials__icon icon-facebook-official" aria-hidden="true"></span>
+					<h3 class="socials__text">Mój Facebook</h3>
+					</a>
+					<a class="socials__link" href="mailto:mail@mail.pl" title="Napisz maila">
+					<span class="socials__icon socials__icon--mail icon-mail-alt" aria-hidden="true"></span>
+					<h3 class="socials__text">Napisz do mnie</h3>
+					</a>
+					<a class="socials__link" href="tel:555555555" title="Zadzwoń">
+					<span class="socials__icon icon-phone-1" aria-hidden="true"></span>
+					<h3 class="socials__text">Zadzwoń do mnie</h3>
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer id="footer" class="footer">
+		<p class="footer__copyright">&copy; 2017 Michał Grochowski -  <a class="footer__link" href="http://dobrywebdev.pl" title="dobrywebdev.pl">dobrywebdev.pl</a></p>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/main.min.js"></script>
+</body>
+</html>

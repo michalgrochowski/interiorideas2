@@ -1,0 +1,75 @@
+// Main layout
+
+.container {
+    @include flex-center-column;
+    width: 100%;
+}
+
+.container__title {
+    @include mq-max(630px) {
+        text-align: center;
+    }
+    color: #333333;
+    margin: 10rem 0 5rem 0;
+    font-weight: normal;
+}
+
+.section {
+    background-color: #ffffff;
+    @include flex-center-row;
+    flex-wrap: wrap;
+    min-height: 30vh;
+    @include mq-minmax(320px, 968px) {
+        width: 95%;
+    }
+    @include mq-minmax(969px, 1200px) {
+        width: 100%;
+    }
+    @include mq-min(1201px) {
+        width: 117rem;
+    }
+}
+
+.section__description {
+    @include flex-center-column;
+}
+
+.section__title {
+    text-align: center;
+    @include mq-min(601px) {
+        flex-basis: 100%;
+    }
+    font-weight: normal;
+}
+
+.section__paragraph {
+    font-size: 2rem;
+    font-style: italic;
+    @include mq-max(600px) {
+        text-align: center;
+    }
+    @include mq-min(601px) {
+        flex-basis: 100%;
+    }
+}
+
+.section__wrapper {
+    @include flex-center-row;
+    flex-basis: 100%;
+}
+
+.section__text {
+    font-size: 1.8rem;
+    @include mq-max(600px) {
+        text-align: center;
+        padding: 0.5rem 2rem 0.5rem 2rem;
+    }
+    @include mq-minmax(601px, 968px) {
+        text-align: left;
+        padding: 0.5rem;
+    }
+    @include mq-min(968px) {
+        padding: 0 7rem 0 1rem;
+    }
+    font-weight: 400;
+}

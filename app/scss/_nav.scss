@@ -1,0 +1,127 @@
+// Header and nav
+
+.header {
+    width: 100%;
+    height: 5rem;
+    position: relative;
+}
+
+.nav {
+    @include flex-center-row;
+    justify-content: space-between;
+    width: 100%;
+    height: 11rem;
+    padding: 1rem 2rem 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 2;
+    transition: height 0.5s, background-color 0.5s;
+    box-shadow: 0px 2px 15px 0px rgba(51,51,51,0.5);
+    @include mq-max(900px) {
+        height: 7rem;
+    }
+}
+
+.nav--small {
+    height: 4rem;
+    padding: 0.2rem 2rem 0.2rem 0;
+    background-color: rgba(255, 255, 255, 1);
+    transition: height 0.5s, background-color 0.5s;
+    box-shadow: 0px 2px 15px 0px rgba(51,51,51,0.5);
+}
+
+.nav__logo {
+    margin: 1rem 0 0 3rem;
+    height: 10rem;
+    width: auto;
+    transition: height 0.5s, background-color 0.5s, margin 0.5s;
+    @include mq-max(900px) {
+        margin: 1rem 0 0 1rem;
+        height: 6rem;
+    }
+    @include mq-minmax(900px,1050px) {
+        margin: 1rem 0 0 1rem;
+        height: 7rem;
+    }
+}
+
+.nav__logo--small {
+    margin: 1rem 0 0 2rem;
+    height: 3rem;
+    width: auto;
+    transition: height 0.5s, background-color 0.5s, margin 0.5s;
+}
+
+.nav__list {
+    @include mq-min(851px) {
+        @include flex-center-row;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    @include mq-max(850px) {
+        display: none;
+    }
+}
+
+.nav__list--mobile {
+    background-color: rgba(255, 255, 255, 1);
+    position: absolute;
+    left: 0;
+    top: 5.4rem;
+    width: 100%;
+    display: none;
+    box-shadow: 0px 5px 15px 0px rgba(51,51,51,0.5);
+}
+
+.nav__list--mobile--scrolled {
+    @extend .nav__list--mobile;
+    top: 2.4rem;
+    box-shadow: 0px 5px 15px 0px rgba(51,51,51,0.5);
+}
+
+.nav__item {
+    font-size: 1.8rem;
+    padding: 1rem;
+    display: block;
+    @include mq-max(850px) {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.nav__item--mobile {
+    margin-left: -2rem;
+}
+
+.nav__item:last-of-type {
+    @include mq-min(851px) {
+        margin-right: 3rem;
+    }
+}
+
+.nav__link {
+    color: #333333;
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    color: #666666;
+    text-decoration: underline;
+}
+
+.nav__hamburger {
+    color: #333333;
+    font-size: 3rem;
+    border: none;
+    background: none;
+    @include mq-min(851px) {
+        display: none;
+    }
+}
+
+.nav__close-menu {
+    @extend .nav__hamburger;
+    display: none;
+}
