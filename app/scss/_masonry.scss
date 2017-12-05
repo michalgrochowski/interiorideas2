@@ -1,0 +1,23 @@
+.masonry {
+    @include flex-row;
+    flex-wrap: wrap;
+}
+
+.masonry__item {
+    width: 32%;
+    margin: 0.5rem 0.5%;
+    background-color: #777777;
+    height: 200px;
+    &--width2 {
+        width: 65%;
+    }
+    &--width3 {
+        width: 99%;
+    }
+    &--height2 {
+        height: 300px;
+    }
+    &--height3 {
+        height: 400px;
+    }
+}
