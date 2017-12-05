@@ -52,3 +52,7 @@ node_modules/
 # Form files
 phpmailer/
 formularz.php
+
+# dist
+
+dist/

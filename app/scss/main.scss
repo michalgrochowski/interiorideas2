@@ -37,3 +37,16 @@ body {
 @import '_misc.scss';
 
 @import '_projects.scss';
+
+.owl-nav {
+    position: absolute;
+    width: 20%;
+    top: 105%;
+    left: 50%;
+    transform: translateX(-50%);
+    @include flex-center-row;
+}
+
+.owl-prev {
+    border: 1px solid black;
+}

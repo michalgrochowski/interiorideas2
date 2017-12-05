@@ -861,15 +861,8 @@ body {
   display: block;
   margin: 0.5rem 1rem;
   background-color: #777777;
-  height: 90%;
-  width: 15%;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
+  height: 500px;
   position: relative; }
-  .projects__photo:hover {
-    width: 30%;
-    -webkit-transition: 0.3s all;
-    transition: 0.3s all; }
 
 .projects__background {
   position: absolute;
@@ -878,7 +871,33 @@ body {
   -webkit-transform: translateY(-50%) translateX(-50%);
   transform: translateY(-50%) translateX(-50%);
   -webkit-transition: 0.3s all;
-  transition: 0.3s all; }
+  transition: 0.3s all;
+  width: auto;
+  height: 100%; }
   .projects__background:hover {
     -webkit-transition: 0.3s all;
     transition: 0.3s all; }
+
+.owl-nav {
+  position: absolute;
+  width: 20%;
+  top: 105%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.owl-prev {
+  border: 1px solid black; }

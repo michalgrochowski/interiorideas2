@@ -20,14 +20,8 @@
     display: block;
     margin: 0.5rem 1rem;
     background-color: #777777;
-    height: 90%;
-    width: 15%;
-    transition: 0.3s all;
+    height: 500px;
     position: relative;
-    &:hover {
-        width: 30%;
-        transition: 0.3s all;
-    }
 }
 
 .projects__background {
@@ -36,6 +30,8 @@
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
     transition: 0.3s all;
+    width: auto;
+    height: 100%;
     &:hover {
         transition: 0.3s all;
     }
