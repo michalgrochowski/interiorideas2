@@ -47,6 +47,14 @@ body {
     @include flex-center-row;
 }
 
-.owl-prev {
+.owl-prev, .owl-next {
     border: 1px solid black;
+    height: 3rem;
+    width: 10rem;
+    margin: 0 1rem 0 1rem;
+    text-align: center;
+}
+
+.owl-carousel .owl-item img {
+    width: auto;
 }

@@ -836,11 +836,14 @@ body {
 
 .projects__title {
   font-size: 2rem;
-  font-weight: normal; }
+  font-weight: normal;
+  margin-top: 0; }
+  .projects__title--top-margin {
+    margin-top: 5rem; }
 
 .projects__thumbnails {
   height: 500px;
-  margin: 2rem 0;
+  margin: 2rem 0 5rem 0;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -899,5 +902,12 @@ body {
   -ms-flex-direction: row;
   flex-direction: row; }
 
-.owl-prev {
-  border: 1px solid black; }
+.owl-prev, .owl-next {
+  border: 1px solid black;
+  height: 3rem;
+  width: 10rem;
+  margin: 0 1rem 0 1rem;
+  text-align: center; }
+
+.owl-carousel .owl-item img {
+  width: auto; }

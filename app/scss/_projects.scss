@@ -6,11 +6,15 @@
 .projects__title {
     font-size: 2rem;
     font-weight: normal;
+    margin-top: 0;
+    &--top-margin {
+        margin-top: 5rem;
+    }
 }
 
 .projects__thumbnails {
     height: 500px;
-    margin: 2rem 0;
+    margin: 2rem 0 5rem 0;
     width: 100%;
     @include flex-center-row;
 }
