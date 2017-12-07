@@ -888,8 +888,8 @@ body {
   left: 50%;
   -webkit-transform: translateY(-50%) translateX(-50%) scale(1);
   transform: translateY(-50%) translateX(-50%) scale(1);
-  -webkit-transform-origin: center center;
-  transform-origin: center center;
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   width: auto;
@@ -901,8 +901,8 @@ body {
     transform-origin: 100% 0%;
     -webkit-transform: scale(1.05) translateY(-50%) translateX(-50%);
     transform: scale(1.05) translateY(-50%) translateX(-50%);
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
     -webkit-filter: blur(5px);
     filter: blur(5px); }
 
@@ -964,8 +964,8 @@ body {
   left: 50%;
   -webkit-transform: translateY(-50%) translateX(-50%) scale(1);
   transform: translateY(-50%) translateX(-50%) scale(1);
-  -webkit-transform-origin: center center;
-  transform-origin: center center;
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   min-height: 100%;
@@ -977,8 +977,8 @@ body {
     transform-origin: 100% 0%;
     -webkit-transform: scale(1.05) translateY(-50%) translateX(-50%);
     transform: scale(1.05) translateY(-50%) translateX(-50%);
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
     -webkit-filter: blur(5px);
     filter: blur(5px); }
 
