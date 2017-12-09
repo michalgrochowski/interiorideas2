@@ -401,7 +401,7 @@ body {
   font-size: 3rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s; }
-  .bottom-nav__link:hover {
+  .bottom-nav__link:hover, .bottom-nav__link:focus {
     font-size: 3.5rem;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
