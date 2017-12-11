@@ -350,7 +350,7 @@ body {
   margin: 1rem 0.5%;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  height: 350px;
+  height: 380px;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -364,7 +364,7 @@ body {
       width: 45%; } }
   @media screen and (min-width: 901px) {
     .bottom-nav__item {
-      width: 31%;
+      width: 33%;
       margin: 1rem 1%; } }
   @media screen and (max-width: 600px) {
     .bottom-nav__item--big {
@@ -374,13 +374,15 @@ body {
       width: 45%; } }
   @media screen and (min-width: 901px) {
     .bottom-nav__item--big {
-      width: 64%;
+      width: 62%;
       margin: 1rem 1%; } }
   .bottom-nav__item:hover, .bottom-nav__item:focus {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     -webkit-box-shadow: 0px 0px 15px 5px rgba(51, 51, 51, 0.3);
     box-shadow: 0px 0px 15px 5px rgba(51, 51, 51, 0.3); }
+  .bottom-nav__item--inspiracje {
+    height: 200px; }
 
 .bottom-nav__background {
   position: absolute;
@@ -389,8 +391,9 @@ body {
   -webkit-transform: translateY(-50%) translateX(-50%);
   transform: translateY(-50%) translateX(-50%);
   width: 100%; }
-  .bottom-nav__background--push-top {
-    top: 60%; }
+  .bottom-nav__background--inspiracje {
+    width: 100%;
+    height: auto; }
 
 .bottom-nav__link {
   height: 100%;
@@ -404,7 +407,7 @@ body {
   top: 0;
   left: 0;
   z-index: 1;
-  padding: 0.5rem 2rem; }
+  padding: 0 2rem; }
   .bottom-nav__link:hover, .bottom-nav__link:focus {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -412,8 +415,7 @@ body {
     box-shadow: 0px 0px 15px 5px rgba(51, 51, 51, 0.3); }
   .bottom-nav__link--detale {
     text-align: right;
-    padding-right: 20%;
-    padding-top: 0; }
+    padding-right: 20%; }
   .bottom-nav__link--kontakt {
     text-align: right;
     color: #eaeaea;
