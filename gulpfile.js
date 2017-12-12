@@ -45,7 +45,7 @@ gulp.task('useref', function(){
 });
 
 gulp.task('uglify', function() {
-    return gulp.src('dist/js/main.js')
+    return gulp.src('dist/js/main.min.js')
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'))
 })
@@ -126,5 +126,5 @@ gulp.task('default', function(){
 });
 
 gulp.task('build', function(){
-    sequence('clean:dist', ['sass', 'useref', 'img', 'font', 'fonts', 'php', 'json', 'form', 'favicons', 'xml', 'favicon-svg', 'manifest', 'ico', 'serviceWorker'], 'cssmin')
+    sequence('clean:dist', ['sass', 'useref', 'img', 'font', 'fonts', 'php', 'json', 'form', 'favicons', 'xml', 'favicon-svg', 'manifest', 'ico', 'serviceWorker'], 'uglify', 'cssmin')
 });
